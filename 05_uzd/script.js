@@ -24,3 +24,24 @@ function biggestNumber(a, b, c){
         }
     }
 }
+
+function biggestNumber1(a, b, c){
+
+    if(a > b){
+        let temp = a
+        a = b
+        b = temp
+    }
+
+    if(a > c){
+        let temp = a
+        a = c
+        c = temp
+    }
+
+    if(b > c){
+        let temp = b
+        b = c
+        c = temp
+    }
+}
