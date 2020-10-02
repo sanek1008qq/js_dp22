@@ -1,15 +1,10 @@
-console.log('Array!')
+console.log('elseif!')
 
 
-function generateArray(start, end){
-
-    let rangeArray = []
-
-    for(let i = start; i <= end; i++){
-        rangeArray.push(i)
+function moreThanTen(number){
+    if(number > 10){
+        return true
+    }else {
+        return false
     }
-    console.log(rangeArray)
 }
-
-let data = generateArray(3,9)
-console.log(data)
