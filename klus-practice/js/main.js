@@ -12,4 +12,18 @@ function filter(btnType){
     }
 
     //console.log(btns)
+
+    let table = document.getElementsByTagName('tr')
+
+    for(let row of table){
+        if(row.className === ''){
+            continue
+        }
+
+        delete row.removeAttribute('hidden')
+
+        if(row.className !== btnType){
+            row.setAttribute('hidden','hidden')
+        }
+    }
 }
