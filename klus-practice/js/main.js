@@ -1,4 +1,3 @@
-
 console.log("Welcome to KLUS!")
 
 function filter(btnType){
@@ -11,10 +10,8 @@ function filter(btnType){
         }
     }
 
-    //console.log(btns)
-
     let table = document.getElementsByTagName('tr')
-
+    
     for(let row of table){
         if(row.className === ''){
             continue
@@ -22,7 +19,7 @@ function filter(btnType){
 
         delete row.removeAttribute('hidden')
 
-        if(row.className !== btnType){
+        if(row.className !== btnType && btnType !== 'viss'){
             row.setAttribute('hidden','hidden')
         }
     }
